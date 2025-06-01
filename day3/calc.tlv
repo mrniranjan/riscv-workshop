@@ -18,7 +18,7 @@
    $div[31:0] = $val1[31:0] / $val2[31:0];
 
    // use mux to select any 1 operation
-   $out[31:0] = $op[0] ? $sum : $op[1] ? $diff : $op[2] ? $prod : $quot;
+   $out[31:0] = $op[0] ? $sum : $op[1] ? $diff : $op[2] ? $prod : $div;
 
 
    // Assert these to end simulation (before the cycle limit).

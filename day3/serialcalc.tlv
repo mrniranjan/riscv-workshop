@@ -18,7 +18,7 @@
    $div[31:0] = $val1[31:0] / $val2[31:0];
 
    // use mux to select any 1 operation
-   $out[31:0] = $op[0] ? $sum : $op[1] ? $diff : $op[2] ? $prod : $quot;
+   $out[31:0] = $op[0] ? $sum : $op[1] ? $diff : $op[2] ? $prod : $div;
    // save the output to val1 and also have a reset 
    $val1[31:0] = $reset ? 0 : >>1$out[31:0];
 
